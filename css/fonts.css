@@ -1,0 +1,21 @@
+/*FONTS*/
+@font-face {
+	font-family: myriadB;
+	src: url(../fonts/myriadbold.otf),
+		url(../fonts/myriadbold.ttf);
+}
+@font-face {
+	font-family: myriadR;
+	src: url(../fonts/myriadregular.otf),
+		url(../fonts/myriadregular.ttf);
+}
+@font-face {
+	font-family: pleaseWrite;
+	src: url(../fonts/pleasewritemeasong.otf),
+		url(../fonts/pleasewritemeasong.ttf);
+}
+@font-face {
+	font-family: sacramento;
+	src: url(../fonts/sacramentoregular.otf),
+		url(../fonts/sacramentoregulat.ttf);
+}
