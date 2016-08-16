@@ -1,4 +1,4 @@
-/*!
+/*! slides
  * Materialize v0.97.7 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
@@ -3396,7 +3396,7 @@ $(document).ready(function(){
     }
   };
 
-}( jQuery ));
+}( jQuery )); //SLIDES
 ;(function ($) {
 
   var methods = {
@@ -3404,7 +3404,7 @@ $(document).ready(function(){
     init : function(options) {
       var defaults = {
         indicators: true,
-        height: 400,
+        height: 645,
         transition: 500,
         interval: 6000
       };

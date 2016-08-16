@@ -7540,7 +7540,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .slider {
   position: relative;
-  height: 400px;
+  height: 645px;
   width: 100%;
 }
 
@@ -7563,10 +7563,11 @@ input[type=range]:focus::-ms-fill-upper {
   bottom: 30px;
 }
 
+/*SLIDER*/
 .slider .slides {
   background-color: #9e9e9e;
   margin: 0;
-  height: 400px;
+  height: 645px;
 }
 
 .slider .slides li {
@@ -7604,29 +7605,32 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 2;
 }
 
+/*INDICATOR*/
 .slider .indicators {
-  position: absolute;
+  position: relative;
   text-align: center;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0;
+  z-index: 2;
+  margin: -40px 0 0 0;
 }
 
 .slider .indicators .indicator-item {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 21px;
+  width: 21px;
   margin: 0 12px;
-  background-color: #e0e0e0;
+  background-color: transparent;
   transition: background-color .3s;
   border-radius: 50%;
+  border: 5px solid white;
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: white;
 }
 
 .carousel {

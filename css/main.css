@@ -1,16 +1,47 @@
-body {
-  font-size: 3em; }
-
-.t2 {
-  font-family: myriadB, sans-serif; }
-
-.t3 {
-  font-family: myriadR, sans-serif; }
-
-.t4 {
+h2 {
   font-family: pleaseWrite, sans-serif; }
 
-.t5 {
-  font-family: sacramento, cursive; }
+nav {
+  background-color: transparent;
+  background-image: url(../img/bg-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75px;
+  line-height: 75px; }
+  nav .brand-logo {
+    line-height: 0px; }
+    nav .brand-logo .logo {
+      margin-top: 4px; }
+  nav ul a {
+    font-family: sacramento, cursive;
+    font-size: 2em; }
+    nav ul a:hover {
+      font-weight: 600; }
+  nav ul a.ico-rrss {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0 10px; }
+    nav ul a.ico-rrss:hover {
+      color: #274470; }
+  nav .side-nav {
+    background: #d40000;
+    padding-top: 4%;
+    width: 250px; }
+    nav .side-nav li {
+      text-align: center; }
+      nav .side-nav li a {
+        font-family: sacramento, cursive;
+        font-size: 2em;
+        color: white; }
+        nav .side-nav li a:hover {
+          font-weight: 600; }
+      nav .side-nav li a.ico-rrss {
+        display: inline-block;
+        font-size: 2em;
+        padding: 0 10px; }
+        nav .side-nav li a.ico-rrss:hover {
+          color: #ff212b; }
+        nav .side-nav li a.ico-rrss span {
+          margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
