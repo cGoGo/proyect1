@@ -1,0 +1,12 @@
+.video {
+	background-image: url(../img/bg-video.jpg);
+	color: white;
+	span {
+		display: block;
+		font-family: $sacra;
+		font-size: 3em;
+		i {
+			font-size: 0.4em;
+		}
+	}
+}

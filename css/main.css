@@ -1,5 +1,7 @@
 h2 {
-  font-family: pleaseWrite, sans-serif; }
+  font-family: pleaseWrite, sans-serif;
+  font-size: 5em;
+  margin: 0; }
 
 nav {
   background-color: transparent;
@@ -43,5 +45,15 @@ nav {
           color: #ff212b; }
         nav .side-nav li a.ico-rrss span {
           margin: 0; }
+
+.video {
+  background-image: url(../img/bg-video.jpg);
+  color: white; }
+  .video span {
+    display: block;
+    font-family: sacramento, cursive;
+    font-size: 3em; }
+    .video span i {
+      font-size: 0.4em; }
 
 /*# sourceMappingURL=main.css.map */

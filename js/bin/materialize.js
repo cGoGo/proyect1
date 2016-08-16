@@ -1,4 +1,4 @@
-/*! slides
+/*! 
  * Materialize v0.97.7 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
@@ -3477,7 +3477,7 @@ $(document).ready(function(){
         if (!$this.hasClass('fullscreen')) {
           if (options.indicators) {
             // Add height if indicators are present
-            $this.height(options.height + 40);
+            $this.height(options.height);
           }
           else {
             $this.height(options.height);
