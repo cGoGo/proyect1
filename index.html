@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Chilito</title>
 	<link rel="stylesheet" href="css/materialize.css">
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="css/fonts.css">
 	<link type="text/css" rel="stylesheet" href="css/main.css">
@@ -102,17 +102,31 @@
 			</ul>
 		</div>
 	</header>
-	<section class="video">
+	<section class="video section">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 center-align">
-					<h2>DALE PLAY A MIS VIDEOS</h2>
-					<span>hechos con mucho amor 
+					<div class="cont-video">
+						<img src="img/tv.png" alt="tv-video-chilito">
+						<div class="cont-play">
+							<a href="#modal1" class="modal-trigger">
+								<i class="fa fa-play-circle-o" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<img src="img/Chilito.png" alt="chilito" class="chilito-center">
+					<h2 class="title-section">DALE PLAY A MIS VIDEOS</h2>
+					<span class="subtitle-section">hechos con mucho amor 
 						<i class="fa fa-heart" aria-hidden="true"></i>
 						<i class="fa fa-heart" aria-hidden="true"></i>
 						<i class="fa fa-heart" aria-hidden="true"></i>
 					</span>
 				</div>
+			</div>
+		</div>
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<iframe src="https://www.youtube.com/embed/JlGwA9xN9QA" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>

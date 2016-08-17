@@ -1,12 +1,49 @@
 .video {
+	position: relative;
+	height: 565px;
+	.chilito-center {
+		position: absolute;
+		margin-top: -3%;
+		margin-left: 30%;
+	}
 	background-image: url(../img/bg-video.jpg);
-	color: white;
+	background-position: center;
+	background-size: cover;
+	.cont-video {
+		position: absolute;
+		margin-top: -1%;
+		margin-left: 20%;
+		.cont-play {
+			position: relative;
+			font-size: 10em;
+			margin-top: -74%;
+			margin-left: -10%;
+			a {
+				color: white;
+				&:hover {
+					color: #e0e0e0;
+				}
+			}
+		}
+	}
+	h2 {
+		position: relative;
+	}
 	span {
-		display: block;
-		font-family: $sacra;
-		font-size: 3em;
+		position: relative;
 		i {
 			font-size: 0.4em;
+		}
+	}
+	.modal {
+		height: 500px;
+		min-height: 250px;
+		.modal-content {
+			height: 100%;
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }

@@ -7,3 +7,8 @@ $( document ).ready(function(){
 $(document).ready(function(){
 	$('.slider').slider({full_width: true});
 });
+
+//modal
+$(document).ready(function(){
+	$('.modal-trigger').leanModal();
+});
