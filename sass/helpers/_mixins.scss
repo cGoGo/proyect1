@@ -1,0 +1,7 @@
+@mixin bg-section ($height, $url-img) {
+	position: relative;
+	height: $height;
+	background-image: $url-img;
+	background-position: center;
+	background-size: cover;
+}
