@@ -54,7 +54,20 @@
 	background-size: cover;
 	.astronauta{
 		max-width: 100%;
-		padding: 15% 0;
+		padding: 35% 0;
+	}
+	input{
+		border: solid 1px white;
+		padding: 1%;
+		width: 60%;
+	}
+	.boton-club{
+		width: 60%;
+	}
+	.title-section-club {
+		font-family: $pls;
+		font-size: 2em;
+		margin: 0;
 	}
 }
 
@@ -121,5 +134,56 @@
 		font-size: 3em;
 		margin-top: -18px;
 		color: white;
+	}
+}
+.recuerdos{
+	background-image: url(../img/bg-pagina-6.jpg);
+	background-position: center;
+	background-size: cover;
+	.astronauta{
+		max-width: 100%;
+		padding: 35% 0;
+	}
+	input{
+		border: solid 1px white;
+		padding: 1%;
+		width: 60%;
+	}
+	.boton-club{
+		width: 60%;
+	}
+	.title-section- {
+		font-family: $pls;
+		font-size: 2em;
+		margin: 0;
+	}
+}
+.foto{
+	background-color: #f0f0f0;
+	padding: 3%;
+	border: solid 1px grey;
+	img{
+		max-width: 90%;
+		padding-top: 5px;
+	}
+}
+.escribeme{
+	background-image: url(../img/bg-pagina-7.jpg);
+	background-position: center;
+	background-size: cover;
+	input{
+		border: solid 1px white;
+		padding: 1%;
+		width: 80%;
+	}
+	textarea{
+		border: solid 1px white;
+		padding: 1%;
+		width: 82%;
+	}
+	.boton-contacto{
+		width: 60%;	
+		font-family: $pls;
+		font-size: 2em;
 	}
 }

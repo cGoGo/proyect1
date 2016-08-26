@@ -18,6 +18,31 @@
   padding-top: 20%;
   padding-bottom: 5%; }
 
+.pd-bottom {
+  padding-bottom: 5%; }
+
+.tienda {
+  padding-top: 5%; }
+  .tienda .title-section-blue {
+    color: #192c4a;
+    font-family: pleaseWrite, sans-serif;
+    font-size: 5em;
+    margin: 0; }
+  .tienda .subtitle-section-blue {
+    color: #192c4a;
+    display: block;
+    font-family: sacramento, cursive;
+    font-size: 3em;
+    margin-top: -18px; }
+  .tienda img {
+    max-width: 60%; }
+
+.fotografo {
+  position: absolute;
+  top: 4220px;
+  right: 210px;
+  z-index: 1000; }
+
 nav {
   background-color: transparent;
   background-image: url(../img/bg-header.jpg);
@@ -108,7 +133,17 @@ nav {
   background-size: cover; }
   .club .astronauta {
     max-width: 100%;
-    padding: 15% 0; }
+    padding: 35% 0; }
+  .club input {
+    border: solid 1px white;
+    padding: 1%;
+    width: 60%; }
+  .club .boton-club {
+    width: 60%; }
+  .club .title-section-club {
+    font-family: pleaseWrite, sans-serif;
+    font-size: 2em;
+    margin: 0; }
 
 #tituloDeslizable {
   -webkit-animation-duration: 2s;
@@ -164,5 +199,48 @@ nav {
     font-size: 3em;
     margin-top: -18px;
     color: white; }
+
+.recuerdos {
+  background-image: url(../img/bg-pagina-6.jpg);
+  background-position: center;
+  background-size: cover; }
+  .recuerdos .astronauta {
+    max-width: 100%;
+    padding: 35% 0; }
+  .recuerdos input {
+    border: solid 1px white;
+    padding: 1%;
+    width: 60%; }
+  .recuerdos .boton-club {
+    width: 60%; }
+  .recuerdos .title-section- {
+    font-family: pleaseWrite, sans-serif;
+    font-size: 2em;
+    margin: 0; }
+
+.foto {
+  background-color: #f0f0f0;
+  padding: 3%;
+  border: solid 1px grey; }
+  .foto img {
+    max-width: 90%;
+    padding-top: 5px; }
+
+.escribeme {
+  background-image: url(../img/bg-pagina-7.jpg);
+  background-position: center;
+  background-size: cover; }
+  .escribeme input {
+    border: solid 1px white;
+    padding: 1%;
+    width: 80%; }
+  .escribeme textarea {
+    border: solid 1px white;
+    padding: 1%;
+    width: 82%; }
+  .escribeme .boton-contacto {
+    width: 60%;
+    font-family: pleaseWrite, sans-serif;
+    font-size: 2em; }
 
 /*# sourceMappingURL=main.css.map */

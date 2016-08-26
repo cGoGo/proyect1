@@ -21,3 +21,32 @@
 	padding-top: $pd-20;
 	padding-bottom: $pd-top;
 }
+.pd-bottom {
+	padding-bottom: $pd-top;
+}
+.tienda{
+	padding-top: 5%;
+	.title-section-blue{
+		color: #192c4a;
+		font-family: $pls;
+		font-size: 5em;
+		margin: 0;
+	}
+	.subtitle-section-blue {
+		color: #192c4a;
+		display: block;
+		font-family: $sacra;
+		font-size: 3em;
+		margin-top: -18px;
+	}
+	img{
+		max-width: 60%;
+	}
+}
+
+.fotografo{
+	position: absolute;
+	top: 4220px;
+    right: 210px;
+    z-index: 1000;
+}
