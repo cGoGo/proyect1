@@ -11,6 +11,13 @@
     font-size: 3em;
     margin-top: -18px; }
 
+.pd-top {
+  padding-top: 5%; }
+
+.padding-vertical {
+  padding-top: 20%;
+  padding-bottom: 5%; }
+
 nav {
   background-color: transparent;
   background-image: url(../img/bg-header.jpg);
@@ -99,5 +106,63 @@ nav {
   background-image: url(../img/bg-pagina-3.jpg);
   background-position: center;
   background-size: cover; }
+  .club .astronauta {
+    max-width: 100%;
+    padding: 15% 0; }
+
+#tituloDeslizable {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 3s;
+  -moz-animation-iteration-count: 1;
+  -o-animation-duration: 2s;
+  -o-animation-delay: 3s;
+  -o-animation-iteration-count: 1;
+  -ms-animation-duration: 2s;
+  -ms-animation-delay: 3s;
+  -ms-animation-iteration-count: 1; }
+
+#subtituloDeslizable {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 3s;
+  -moz-animation-iteration-count: 1;
+  -o-animation-duration: 2s;
+  -o-animation-delay: 3s;
+  -o-animation-iteration-count: 1;
+  -ms-animation-duration: 2s;
+  -ms-animation-delay: 3s;
+  -ms-animation-iteration-count: 1; }
+
+.formulario {
+  padding-top: 5%; }
+  .formulario .submit {
+    height: 30%;
+    padding: 3%;
+    background-color: #ff212b;
+    font-family: pleaseWrite, sans-serif;
+    border: none;
+    border-radius: 10%;
+    font-size: 1.6em; }
+
+.back-bienvenido {
+  background-image: url(../img/bg-video.jpg);
+  background-position: center;
+  background-size: cover; }
+  .back-bienvenido .title-section-bienvenido {
+    font-family: pleaseWrite, sans-serif;
+    font-size: 5em;
+    margin: 0;
+    color: white; }
+  .back-bienvenido .subtitle-section-bienvenido {
+    display: block;
+    font-family: sacramento, cursive;
+    font-size: 3em;
+    margin-top: -18px;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Chilito</title>
 	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="lib/animate (1).css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="css/fonts.css">
@@ -21,7 +22,7 @@
 					</a>
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down">
-						<li><a href="#">Videos</a></li>
+						<li><a href="#video">Videos</a></li>
 						<li><a href="#">Tienda</a></li>
 						<li><a href="#">Contáctame</a></li>
 						<li>
@@ -102,7 +103,7 @@
 			</ul>
 		</div>
 	</header>
-	<section class="video section">
+	<section class="video section" id="video">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 center-align">
@@ -114,7 +115,6 @@
 							</a>
 						</div>
 					</div>
-					<img src="img/Chilito.png" alt="chilito" class="chilito-center">
 					<h2 class="title-section">DALE PLAY A MIS VIDEOS</h2>
 					<span class="subtitle-section">hechos con mucho amor 
 						<i class="fa fa-heart" aria-hidden="true"></i>
@@ -130,14 +130,29 @@
 			</div>
 		</div>
 	</section>
-	<section class="club">
-		<div class="container">
+	<section class="club" id="club">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col s12 m4 center-align">
-					<img src="img/astronauta.png" alt="placeholder+image">
+				<div class="col s12 m4">
+					<img src="img/astronauta.png" alt="placeholder+image" class="astronauta left-align">
 				</div>
-				<div class="col s12 m8 center-align">
-					
+				<div class="col s12 m8 center-align section">
+					<div id="tituloDeslizable">
+						<h2 class="title-section pd-top">ÚNETE A MI CLUB</h2>
+					</div>
+					<div id="subtituloDeslizable">
+						<span class="subtitle-section">y compartiré contigo mis mejores alegrías</span>
+					</div>
+					  <div class="row">
+					    <div class="col s12">
+					      <form action="enviar.php" method="post">
+					      	<input type="text" name="nombre" placeholder="Nombre" required/>
+					      	<input type="text" name="correo" placeholder="Correo" required/>
+					      	<input type="text" name="origen" placeholder="¿Donde vives?" required/>
+					      	<input type="submit" value="Seamos Amigos" id="boton"/>
+					      </form>
+					    </div>
+					  </div>
 				</div>
 			</div>
 		</div>

@@ -7,3 +7,5 @@
       }
     });
 
+
+    $('#tituloDeslizable').addClass('animated bounceOutLeft');

@@ -12,3 +12,8 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('.modal-trigger').leanModal();
 });
+
+//animated
+
+$('#tituloDeslizable').addClass('animated lightSpeedIn');
+$('#subtituloDeslizable').addClass('animated rollIn');
