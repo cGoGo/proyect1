@@ -131,48 +131,108 @@ nav {
   background-image: url(../img/bg-pagina-3.jpg);
   background-position: center;
   background-size: cover; }
-  .club .astronauta {
-    max-width: 100%;
-    padding: 35% 0; }
-  .club input {
-    border: solid 1px white;
-    padding: 1%;
-    width: 60%; }
-  .club .boton-club {
-    width: 60%; }
-  .club .title-section-club {
-    font-family: pleaseWrite, sans-serif;
-    font-size: 2em;
-    margin: 0; }
+  .club .img-astro {
+    margin-top: -40%; }
+  .club form {
+    width: 100%;
+    padding: 1% 4%; }
+    .club form input[type=text] {
+      background-color: white;
+      display: inline-block;
+      width: 23%;
+      margin: 4px;
+      height: 60px;
+      border-bottom: 0px;
+      padding-left: 15px;
+      box-sizing: inherit;
+      font-family: pleaseWrite, sans-serif;
+      font-size: 1.5em;
+      color: black; }
+      .club form input[type=text]:hover, .club form input[type=text]:focus {
+        border: 0; }
+    .club form input[name=nombre] {
+      border-radius: 30px 0px 0px 30px;
+      -moz-border-radius: 30px 0px 0px 30px;
+      -webkit-border-radius: 30px 0px 0px 30px; }
+    .club form i.submit-club {
+      width: 23%;
+      margin: 4px;
+      display: inline-block;
+      border-radius: 0;
+      height: 60px;
+      border-radius: 0px 30px 30px 0px;
+      -moz-border-radius: 0px 30px 30px 0px;
+      -webkit-border-radius: 0px 30px 30px 0px;
+      background-color: #ff212b;
+      padding-top: 1.5%;
+      padding-left: 10px; }
+      .club form i.submit-club input {
+        width: 100%;
+        font-family: pleaseWrite, sans-serif;
+        text-align: left;
+        font-size: 1.5em; }
+        .club form i.submit-club input:focus {
+          border: 0; }
 
+/*
+.club{
+	background-image: url(../img/bg-pagina-3.jpg);
+	background-position: center;
+	background-size: cover;
+	.astronauta{
+		max-width: 100%;
+		padding: 35% 0;
+	}
+	input{
+		border: solid 1px white;
+		padding: 1%;
+		width: 60%;
+	}
+	.boton-club{
+		width: 60%;
+	}
+	.title-section-club {
+		font-family: $pls;
+		font-size: 2em;
+		margin: 0;
+	}
+}
 #tituloDeslizable {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 3s;
   -webkit-animation-iteration-count: 1;
+
   -moz-animation-duration: 2s;
   -moz-animation-delay: 3s;
   -moz-animation-iteration-count: 1;
+
   -o-animation-duration: 2s;
   -o-animation-delay: 3s;
   -o-animation-iteration-count: 1;
+
   -ms-animation-duration: 2s;
   -ms-animation-delay: 3s;
-  -ms-animation-iteration-count: 1; }
+  -ms-animation-iteration-count: 1;
+}
 
 #subtituloDeslizable {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 3s;
   -webkit-animation-iteration-count: 1;
+
   -moz-animation-duration: 2s;
   -moz-animation-delay: 3s;
   -moz-animation-iteration-count: 1;
+
   -o-animation-duration: 2s;
   -o-animation-delay: 3s;
   -o-animation-iteration-count: 1;
+
   -ms-animation-duration: 2s;
   -ms-animation-delay: 3s;
-  -ms-animation-iteration-count: 1; }
-
+  -ms-animation-iteration-count: 1;
+}
+*/
 .formulario {
   padding-top: 5%; }
   .formulario .submit {
