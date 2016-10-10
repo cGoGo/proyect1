@@ -182,19 +182,21 @@ nav {
   background-image: url(../img/bg-pagina-6.jpg);
   background-position: center;
   background-size: cover; }
-  .recuerdos .card {
-    background-color: #F0F0F0; }
-    .recuerdos .card .card-image {
-      padding: 6%; }
-    .recuerdos .card .card-content {
-      color: black;
-      font-family: myriadR, sans-serif;
-      padding: 0 0 20px 0; }
+  .recuerdos .cont-recuerdos {
+    z-index: 1; }
+    .recuerdos .cont-recuerdos .card {
+      background-color: #F0F0F0; }
+      .recuerdos .cont-recuerdos .card .card-image {
+        padding: 6%; }
+      .recuerdos .cont-recuerdos .card .card-content {
+        color: black;
+        font-family: myriadR, sans-serif;
+        padding: 0 0 20px 0; }
   .recuerdos .fotografo {
     position: absolute;
-    top: 4220px;
-    right: 210px;
-    z-index: 1000; }
+    top: 3710px;
+    right: 140px;
+    z-index: 0; }
 
 .formulario {
   padding-top: 5%; }
