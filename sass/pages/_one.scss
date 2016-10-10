@@ -47,7 +47,7 @@
 		}
 	}
 }
-//SECCION CLUB
+//CLUB
 .club {
 	.img-astro {
 		margin-top: -40%;
@@ -104,6 +104,30 @@
 		height: 500px;
 	}
 }
+//RECUERDOS
+.recuerdos {
+	background-image: url(../img/bg-pagina-6.jpg);
+	background-position: center;
+	background-size: cover;
+	.card {
+		background-color: $gris;
+		.card-image {
+			padding: 6%;
+		}
+		.card-content {
+			color: black;
+			font-family: $myR;
+			padding: 0 0 20px 0;
+		}
+	}
+	.fotografo{
+		position: absolute;
+		top: 4220px;
+	    right: 210px;
+	    z-index: 1000;
+	}
+}
+
 
 .formulario{
 	padding-top: $pd-top;
@@ -136,9 +160,7 @@
 	}
 }
 .recuerdos{
-	background-image: url(../img/bg-pagina-6.jpg);
-	background-position: center;
-	background-size: cover;
+
 	.astronauta{
 		max-width: 100%;
 		padding: 35% 0;
