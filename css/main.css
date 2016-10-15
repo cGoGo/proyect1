@@ -37,12 +37,6 @@
   .tienda img {
     max-width: 60%; }
 
-.fotografo {
-  position: absolute;
-  top: 4220px;
-  right: 210px;
-  z-index: 1000; }
-
 nav {
   background-color: transparent;
   background-image: url(../img/bg-header.jpg);
@@ -297,12 +291,35 @@ nav {
   font-size: 2em;
   margin: 0; }
 
-.foto {
-  background-color: #f0f0f0;
-  padding: 3%;
-  border: solid 1px grey; }
-  .foto img {
-    max-width: 90%;
-    padding-top: 5px; }
+.section-footer {
+  color: white;
+  padding: 3% 0 0 0;
+  background: #ff212b; }
+  .section-footer .subtitle-section {
+    display: block;
+    font-family: sacramento, cursive;
+    font-size: 3em;
+    margin-top: -18px; }
+  .section-footer .cont-logo {
+    display: inline-block;
+    padding: 0 2%; }
+  .section-footer .row.no-margin {
+    margin: 0;
+    padding: 1%;
+    font-family: myriadR, sans-serif;
+    font-size: 0.9em;
+    background: #d40000; }
+
+/*
+.foto{
+	background-color: #f0f0f0;
+	padding: 3%;
+	border: solid 1px grey;
+	img{
+		max-width: 90%;
+		padding-top: 5px;
+	}
+}
+*/
 
 /*# sourceMappingURL=main.css.map */
