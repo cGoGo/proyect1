@@ -162,7 +162,8 @@ nav {
         text-align: left;
         font-size: 1.5em; }
         .club form i.submit-club input:focus {
-          border: 0; }
+          border: 0;
+          outline: -webkit-focus-ring-color auto 0px; }
 
 .mapa iframe {
   width: 100%;
@@ -229,16 +230,17 @@ nav {
       -moz-border-radius: 30px 30px 30px 30px;
       -webkit-border-radius: 30px 30px 30px 30px;
       background-color: #ff212b;
-      padding-top: 1.5%;
+      padding-top: 2.5%;
       padding-left: 10px; }
       .escribeme form i.submit-club input {
         width: 100%;
         font-family: pleaseWrite, sans-serif;
-        font-size: 1.5em; }
+        font-size: 1.8em; }
         .escribeme form i.submit-club input:hover {
           border: 0; }
         .escribeme form i.submit-club input:focus {
-          border: 0; }
+          border: 0;
+          outline: -webkit-focus-ring-color auto 0px; }
   .escribeme .chilito-luna {
     margin-right: -202px;
     margin-top: -289px; }

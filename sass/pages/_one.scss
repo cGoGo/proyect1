@@ -95,6 +95,7 @@
 				font-size: 1.5em;
 				&:focus {
 					border: 0;
+					outline: -webkit-focus-ring-color auto 0px;
 				}
 			}
 		}
@@ -185,17 +186,18 @@
 			-moz-border-radius: 30px 30px 30px 30px;
 			-webkit-border-radius: 30px 30px 30px 30px;
 			background-color: $red;
-			padding-top: 1.5%;
+			padding-top: 2.5%;
 			padding-left: 10px;
 			input {
 				width: 100%;
 				font-family: $pls;
-				font-size: 1.5em;
+				font-size: 1.8em;
 				&:hover {
 					border: 0;
 				}
 				&:focus {
 					border: 0;
+					outline: -webkit-focus-ring-color auto 0px;
 				}
 			}
 		}
