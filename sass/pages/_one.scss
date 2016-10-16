@@ -105,6 +105,12 @@
 
 //MAPA
 .mapa {
+	.titulo-mapa {
+		margin-bottom: -1%;
+	}
+	.subtitle-section {
+		color: $blue;
+	}
 	iframe {
 		width: 100%;
 		height: 500px;
