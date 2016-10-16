@@ -1,0 +1,19 @@
+@media #{$medium} {
+	.slider {
+		height: 450px !important;
+		.slides {
+			height: 450px !important;
+		}
+	}
+}
+@media #{$small} {
+    .slider {
+		height: 300px !important;
+		.slides {
+			height: 300px !important;
+		}
+    }
+    .video .cont-video {
+    	margin-left: 6%;
+    }
+}
