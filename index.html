@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,8 +11,10 @@
 	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="css/fonts.css">
 	<link type="text/css" rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" type="text/css" href="./tienda/css/tienda.css">
 </head>
-<body>
+<body ng-controller="appCtrl">
 	<header>
 		<!--navbar-->
 		<nav>
@@ -141,34 +143,57 @@
 					<h2 class="title-section-blue">MI TIENDA</h2>
 					<span class="subtitle-section-blue">Llego hasta donde me quieras llevar</span>
 				</div>
+				<a href="#modal2" class="waves-effect waves-light modal-trigger badgeCart" data-badgeCart="{{totalItems()}}">
+					<i class="material-icons">shopping_cart</i>
+				</a>
 			</div>
 			<div class="row center-align pd-top">
-				<div class="col s12 m4">
-					<img src="img/foto-productos-1.jpg" alt=""/>
-					<img src="img/texto producto 1.png" alt=""/>
-				</div>
-				<div class="col s12 m4">
-					<img src="img/foto-productos-2.jpg" alt=""/>
-					<img src="img/texto producto 2.png" alt=""/>
-				</div>
-				<div class="col s12 m4">
-					<img src="img/foto-productos-3.jpg" alt=""/>
-					<img src="img/texto producto 3.png" alt=""/>
+				<div class="col s12 m4" ng-repeat="producto in productos" ng-hide="error">
+					<img class="img" ng-src="{{producto.urlImage}}">
+					<h5 class="ProductName">{{producto.nombre}}</h5>
+					<h5 class="ProductName">{{producto.precio | currency:'$':0}}</h5>
+					<div class="center-align">
+						<input ng-model="producto.cantidad" class="inputNumber cant" type="number" placeholder="Ingrese la Cantidad a comprar">
+						<button class="btn blue" ng-click="addToCart(producto)">Agregar al Carrito</button>
+					</div>
 				</div>
 			</div>
-			<div class="row center-align pd-top pd-bottom">
-				<div class="col s12 m4">
-					<img src="img/foto-productos-4.jpg" alt=""/>
-					<img src="img/texto producto 4.png" alt=""/>
-				</div>
-				<div class="col s12 m4">
-					<img src="img/foto-productos-5.jpg" alt=""/>
-					<img src="img/texto producto 5.png" alt=""/>
-				</div>
-				<div class="col s12 m4">
-					<img src="img/foto-productos-6.jpg" alt=""/>
-					<img src="img/texto producto 6.png" alt=""/>
-				</div>
+			<div id="modal2" class="modal">
+			    <div class="modal-content">
+			      <table >
+						<tr>
+							<td class="titleTable">Cantidad</td>
+							<td class="titleTable pd-titleName">Nombre</td>
+							<td class="titleTable">Precio</td>
+							<td class="titleTable">Total</td>
+						</tr>
+						<tr class="tr" ng-repeat="item in items">
+							<td>{{item.cantidad}}</td>
+							<td>{{item.nombre}}</td>
+							<td>{{item.precio | currency:'$':0}}</td>
+							<td>{{item.sum | currency:'$':0}}</td>
+							<td><button class="btn blue" ng-click="delete($index)">x</button></td>
+						</tr>
+					</table>
+					<hr>
+					<div>
+						<p class="total">Total: {{getTotal() | currency:'$':0}}</p>
+					</div>
+					<br>
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			            <input type="hidden" name="cmd" value="_xclick">
+			            <input type="hidden" name="business" value="paypal@chilito.cl">
+			            <input type="hidden" name="item_name" value="{{ items }}">
+			            <input type="hidden" name="currency_code" value="USD">
+			            <input type="hidden" name="amount"  value="{{ venta }}">
+			            <input type="hidden" name="return" value="http://localhost:8080">
+						<input type="hidden" name="cancel_return" value="http://localhost:8080">
+			            <input type="submit" ng-click="generarCompra()" class="boton"  name="submit" alt="paypal" value="Generar compra con paypal">
+			        </form>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+			    </div>
 			</div>
 		</div>
 	</section>
@@ -380,7 +405,8 @@
 			</div>
 		</div>
 	</section>
-
+	<script type="text/javascript" src="./tienda/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./tienda/controller.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bin/materialize.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
