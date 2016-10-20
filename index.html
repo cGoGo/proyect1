@@ -29,16 +29,16 @@
 						<li><a href="#tienda">Tienda</a></li>
 						<li><a href="#escribeme">Contáctame</a></li>
 						<li>
-							<a href="https://www.facebook.com/chilito.cl" class="ico-rrss">
+							<a href="https://www.facebook.com/chilito.cl" target="_blank" class="ico-rrss">
 								<i class="fa fa-facebook" aria-hidden="true"></i>
 							</a>
-							<a href="https://twitter.com/_Chilito" class="ico-rrss">
+							<a href="https://twitter.com/_Chilito" target="_blank" class="ico-rrss">
 								<i class="fa fa-twitter" aria-hidden="true"></i>
 							</a>
-							<a href="https://instagram.com/chilito.cl/" class="ico-rrss">
+							<a href="https://instagram.com/chilito.cl/" target="_blank" class="ico-rrss">
 								<i class="fa fa-instagram" aria-hidden="true"></i>
 							</a>
-							<a href="https://www.youtube.com/watch?v=JlGwA9xN9QA" class="ico-rrss">
+							<a href="https://www.youtube.com/watch?v=JlGwA9xN9QA" target="_blank" class="ico-rrss">
 								<i class="fa fa-youtube" aria-hidden="true"></i>
 							</a>
 						</li>
@@ -48,16 +48,16 @@
 						<li><a href="#">Tienda</a></li>
 						<li><a href="#">Contáctame</a></li>
 						<li>
-							<a href="https://www.facebook.com/chilito.cl" class="ico-rrss">
+							<a href="https://www.facebook.com/chilito.cl" target="_blank" class="ico-rrss">
 								<span class="fa fa-facebook" aria-hidden="true"></span>
 							</a>
-							<a href="https://twitter.com/_Chilito" class="ico-rrss">
+							<a href="https://twitter.com/_Chilito" target="_blank" class="ico-rrss">
 								<span class="fa fa-twitter" aria-hidden="true"></span>
 							</a>
-							<a href="https://instagram.com/chilito.cl/" class="ico-rrss">
+							<a href="https://instagram.com/chilito.cl/" target="_blank" class="ico-rrss">
 								<span class="fa fa-instagram" aria-hidden="true"></span>
 							</a>
-							<a href="https://www.youtube.com/watch?v=JlGwA9xN9QA" class="ico-rrss">
+							<a href="https://www.youtube.com/watch?v=JlGwA9xN9QA" target="_blank" class="ico-rrss">
 								<span class="fa fa-youtube" aria-hidden="true"></span>
 							</a>
 						</li>
@@ -69,24 +69,24 @@
 		<div class="slider">
 			<ul class="slides">
 				<li>
-					<img src="img/slide1.jpg">
+					<img src="img/slide1.jpg" class="img-responsive">
 				</li>
 				<li>
-					<img src="img/slide2.jpg">
+					<img src="img/slide2.jpg" class="img-responsive">
 				</li>
 				<li>
-					<img src="img/slide3.jpg">
+					<img src="img/slide3.jpg" class="img-responsive">
 				</li>
 				<li>
-					<img src="img/slide4.jpg">
+					<img src="img/slide4.jpg" class="img-responsive">
 				</li>
 				<li>
-					<img src="img/slide5.jpg">
+					<img src="img/slide5.jpg" class="img-responsive">
 				</li>
 			</ul>
 		</div>
 	</header>
-	<section class="video section" id="video">
+	<section class="video section hide-on-med-and-down" id="video">
 		<div class="container ">
 			<div class="row">
 				<div class="col s12 m12 center-align">
@@ -108,8 +108,11 @@
 			</div>
 		</div>
 		<div id="modal1" class="modal">
+			 <div class="modal-header pull-right">
+		      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="close"><i class="fa fa-times" aria-hidden="true" style="color: #192c4a; font-size: 2em;"></i></a>
+		    </div>
 			<div class="modal-content">
-				<iframe src="https://www.youtube.com/embed/JlGwA9xN9QA" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/JlGwA9xN9QA" frameborder="0" allowfullscreen ></iframe>
 			</div>
 		</div>
 	</section>
@@ -147,7 +150,7 @@
 					<i class="material-icons">shopping_cart</i>
 				</a>
 			</div>
-			<div class="row center-align pd-top">
+			<div class="row center-align">
 				<div class="col s12 m4" ng-repeat="producto in productos" ng-hide="error">
 					<img class="img" ng-src="{{producto.urlImage}}">
 					<h5 class="ProductName">{{producto.nombre}}</h5>
@@ -288,7 +291,7 @@
 										<img src="img/foto-amigos-5.jpg">
 									</div>
 									<div class="card-content">
-										<p>"Ahora si que soy 100% chileno"
+										<p>"Ahora sí que soy 100% chileno"
 										<br>
 										<cite>Pietro Carcuro</cite></p>
 									</div>
@@ -370,7 +373,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col s12 m12">
-					<span class="subtitle-section">Amigos que han creido en mi</span>
+					<span class="subtitle-section">Amigos que han creído en mí</span>
 				</div>
 			</div>
 			<div class="row">
@@ -405,6 +408,9 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+		$('#modal1').closeModal();
+	</script>
 	<script type="text/javascript" src="./tienda/bower_components/angular/angular.min.js"></script>
 	<script type="text/javascript" src="./tienda/controller.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>

@@ -294,3 +294,13 @@ nav {
     padding: 6% 0 0 0; } }
 
 /*# sourceMappingURL=main.css.map */
+
+.recuerdos .fotografo {
+    position: absolute;
+    top: 3753px !important;
+    right: 140px;
+    z-index: 0;
+}
+.slider{
+  background-color: white;
+}
